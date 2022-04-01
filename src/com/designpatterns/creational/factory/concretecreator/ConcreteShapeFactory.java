@@ -1,7 +1,7 @@
 package com.designpatterns.creational.factory.concretecreator;
 
 abstract class ConcreteShapeFactory {
-	//factory method
+	//factory method used to create objects but not visible to the clients
 	abstract Shape factoryMethod(String shape);
 
 	//visible to the clients
@@ -17,6 +17,10 @@ abstract class ConcreteShapeFactory {
  *
  */
 class ConcreteSubClassFactory extends ConcreteShapeFactory {
+	
+	/**
+	 * factory method used to create different objects based on string
+	 */
 	@Override
 	Shape factoryMethod(String shape) {
 		// TODO Auto-generated method stub
