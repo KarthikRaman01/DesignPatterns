@@ -2,7 +2,6 @@ package com.designpatterns.creational.factory.abstractcreator;
 
 //DisAdvantage is that the subclasses need to be created for every child class of
 //the interface - very strict - this is how the gang of 4 designed
-
 abstract class AbstractShapeFactory {
 	protected abstract Shape factoryMethod();
 
