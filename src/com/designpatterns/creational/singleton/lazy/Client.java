@@ -6,8 +6,16 @@ public class Client {
 		ExampleSingleton.getInstance();
 		ExampleSingleton.getInstance();
 		ExampleSingleton.getInstance();
-		ExampleSingleton.getInstance();
-		ExampleSingleton.getInstance();
+
+		ExampleSingleton instance = ExampleSingleton.getInstance();
+		instance.setData(100);
+
+		System.out.println(instance.getData());
+
+		instance = null;
+		instance = ExampleSingleton.getInstance();
+		//same data - so the same instance
+		System.out.println(instance.getData());
 
 	}
 
