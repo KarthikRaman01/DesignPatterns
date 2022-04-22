@@ -37,3 +37,12 @@ Take for ex: Logger - Logger needs to be used in all the classes and in this cas
 Use Doublc checked locking or Bill Pugh Approach
 Bill Pugh Apporach - widely used, thread safe, doesn't use synchronization, faster and only creates the instance when
 the client needs it - Recommended
+
+
+
+
+Builder Pattern
+Useful when creating the object is complex and is independent of the 
+assembly of the parts of the object
+
+
