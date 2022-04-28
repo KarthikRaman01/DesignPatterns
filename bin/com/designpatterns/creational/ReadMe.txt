@@ -80,4 +80,19 @@ Product has the list of objects/strings
 
 
 
+Prototype
+new operation - creating objects is expensive
+so prototype patterns uses clones - clone the object that you want and play with it
+
+1) The object that you want to create has to be cloneable first - 
+so the class should implement cloneable
+2) Then create a method called clone and call super.clone() and return the object
+3) Use the shape abstract class here too
+
+For showing purposes
+1) create objects and store it in hashtables
+2) clients request by Id and while returning, call the clone method on the object and return
+
+
+
 
