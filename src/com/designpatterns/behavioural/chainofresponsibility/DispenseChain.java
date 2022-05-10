@@ -16,7 +16,6 @@ class DollarValidator implements DispenseChain {
 			this.chain.dispense(cur);
 		} else {
 			System.out.println("Can't dispense - Needs to be a multiple of 10");
-			return;
 		}
 	}
 
