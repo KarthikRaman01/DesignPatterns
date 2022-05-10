@@ -62,3 +62,18 @@ Important: requests are encapsulated as objects
 Receiver
 Command
 Invoker
+
+
+
+Iterator Pattern
+To iterate through a collection without knowing what sort of collection it is - could be a
+array, linkedlist, map, tree etc
+
+Iterator interface --> hasnext and next method
+Collection interface --> createIterator method
+
+Concrete collection --> implements collection and load an array or a linkedlist or any collection - dummy dump
+In the createIterator method --> create this collectioniterator and pass the collection
+
+Concrete Iterator --> Override all the methods and take the collection in the constructor --> used in the 
+createIterator method
