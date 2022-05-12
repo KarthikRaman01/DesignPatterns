@@ -64,6 +64,15 @@ Command
 Invoker
 
 
+Mediator
+Centralised point of communication for a group of objects
+Example: Flight Control room
+Things to remember:
+1) Colleague
+2) Chat Mediator --> Group Chat
+One person sends the message --> mediator send it to everyone
+and every one should be able to see the message
+
 
 Iterator Pattern
 To iterate through a collection without knowing what sort of collection it is - could be a
