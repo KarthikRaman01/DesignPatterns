@@ -86,3 +86,28 @@ In the createIterator method --> create this collectioniterator and pass the col
 
 Concrete Iterator --> Override all the methods and take the collection in the constructor --> used in the 
 createIterator method
+
+
+Memento
+Maintains the state - state in a finite state machine
+undo --> notepad
+rollback a txn in database
+videogame progress --> save progress
+playback --> restart again from where left off
+
+Why memento? Record the internal state of the object
+without violating the encapsulation
+
+Implementation
+Originator --> Basically keep updating the data here
+But during save --> comes through caretaker and pass the originator object. Impl will be originator.save
+Impl of originator.save --> create a memento object --> replica of the originator and send it. Caretaker will keep
+it for reference
+
+Keep making changes --> write method
+Now for undo, call undo in caretaker and caretaker has the previous memento object. pass the
+memento to the originator and now change the originator member variables (point to memento variables)
+
+
+Main thing --> Whenever you save, you will create a another object(Memento) and have that ready in CareTaker class
+Undo --> use the object to replace the originator
