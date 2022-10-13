@@ -61,7 +61,7 @@ body:
     attributes:
       label: API Response
       description: sample api response
-      placeholder: curl
+      placeholder: "{"resp":"true"}"
     validations:
       required: true    
   - type: markdown
