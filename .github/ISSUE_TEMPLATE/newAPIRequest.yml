@@ -3,7 +3,7 @@ description: Requirement for a new API to be built
 title: "[API Request]: "
 labels: ["backend", "triage"]
 assignees:
-  - lakshmiprasadn
+  - karthikraman
 body:
   - type: dropdown
     id: team
@@ -15,12 +15,55 @@ body:
         - Sales
         - FrontEnd
         - BackEnd
+    validations:
+      required: true   
   - type: textarea
     id: core-resource
     attributes:
       label: Core Resource
       description: The core resource to which this new API needs to be mapped.
       value: "Ex: events. The value would be the first word in the API Path after the domain. API: "
+  - type: dropdown
+    id: method
+    attributes:
+      label: Rest API Method
+      options:
+        - GET
+        - POST
+        - PUT
+        - DELETE
+    validations:
+      required: true    
+  - type: textarea
+    id: endpoint
+    attributes:
+      label: Endpoint URL
+      description: Endpoint of the API
+      value: "Sample Endpoint: /events"
+    validations:
+      required: true
+  - type: textarea
+    id: API Description
+    attributes:
+      label: description
+      description: Description of the API and why it's required
+      value: "Sample: "  
+  - type: textarea
+    id: samplerequest
+    attributes:
+      label: API Request
+      description: sample api request
+      value: "Sample API Request: curl "
+    validations:
+      required: true
+  - type: textarea
+    id: sampleresponse
+    attributes:
+      label: API Response
+      description: sample api response
+      value: "Sample API Response: {} "
+    validations:
+      required: true    
   - type: markdown
     attributes:
       value: |
