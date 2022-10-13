@@ -39,6 +39,7 @@ body:
     attributes:
       label: Endpoint URL
       description: Endpoint of the API
+      placeholder: /events/endpoint/{soluid}
     validations:
       required: true
   - type: textarea
@@ -46,6 +47,7 @@ body:
     attributes:
       label: Description
       description: Description of the API and why it's required
+      placeholder: abcdefghijkl
   - type: textarea
     id: sample-request
     attributes:
@@ -59,6 +61,7 @@ body:
     attributes:
       label: API Response
       description: sample api response
+      placeholder: curl
     validations:
       required: true    
   - type: markdown
