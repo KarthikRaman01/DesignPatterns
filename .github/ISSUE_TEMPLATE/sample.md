@@ -1,5 +1,5 @@
 ---
-name: New API Request
+name: New API Request Sample
 about: Requirement for a new API to be built
 title: '[API] <title>'
 labels: Backend, Needs Triage
