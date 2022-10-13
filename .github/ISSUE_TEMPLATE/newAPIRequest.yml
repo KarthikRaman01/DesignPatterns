@@ -43,13 +43,13 @@ body:
     validations:
       required: true
   - type: textarea
-    id: API Description
+    id: api-description
     attributes:
       label: description
       description: Description of the API and why it's required
       value: "Sample: "  
   - type: textarea
-    id: samplerequest
+    id: sample-request
     attributes:
       label: API Request
       description: sample api request
@@ -57,7 +57,7 @@ body:
     validations:
       required: true
   - type: textarea
-    id: sampleresponse
+    id: sample-response
     attributes:
       label: API Response
       description: sample api response
